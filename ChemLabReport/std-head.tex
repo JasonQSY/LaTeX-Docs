@@ -1,0 +1,87 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title: std-head.tex
+% Description: The head document contains everything pre-defined.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper,12pt]{article}
+% --------------------------------------------------------------------------
+% Packages
+% --------------------------------------------------------------------------
+% Entire Environment
+\usepackage[scale=0.8]{geometry}
+\usepackage{hyperref}
+\usepackage{setspace} %single line skip
+\usepackage{appendix} %provide appendix
+
+% Text 
+\usepackage[normalem]{ulem} %underline
+\usepackage{enumerate} %(i.)
+\usepackage{booktabs} %\toprule
+\usepackage{tabu} % advanced table
+\usepackage{multirow}
+\usepackage{multicol}
+
+% Math
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% Chemistry
+\usepackage[version=4]{mhchem} %chemical equation
+\usepackage{siunitx} %SI unit
+
+% Images
+\usepackage{graphicx} %images
+\usepackage{subfigure}
+
+% Code
+\usepackage{color} 
+\usepackage{xcolor}
+\usepackage{listings}
+
+% Reference
+%\usepackage{natbib}
+
+% Additional
+\usepackage{xeCJK} %Chinese
+\usepackage[T1]{fontenc}
+\usepackage{lipsum} % random words
+
+% -----------------------------------------------------------------
+% Basic settings
+% -----------------------------------------------------------------
+
+\setlength\parindent{0pt} % no indent
+\setlength{\parskip}{1.1ex} 
+
+% Modify the name
+\renewcommand{\contentsname}{\centering Contents}
+\renewcommand\appendixtocname{\uline{Appendices}}
+\renewcommand\appendixname{\uline{Appendices}}
+\renewcommand\appendixpagename{\uline{Appendices}}
+\renewcommand{\refname}{\uline{Reference}}
+
+\newcommand{\usection}[1]{\section{\uline{#1}}}
+\newcommand{\usubsection}[1]{\subsection{\uline{#1}}}
+
+% Code highlight
+% Powered by mcmthesis template in texlive
+\definecolor{grey}{rgb}{0.8,0.8,0.8}
+\definecolor{darkgreen}{rgb}{0,0.3,0}
+\definecolor{darkblue}{rgb}{0,0,0.3}
+\def\lstbasicfont{\fontfamily{pcr}\selectfont\footnotesize}
+\lstset{
+    numbers=left,
+    numberstyle=\small,
+    showstringspaces=false,
+    showspaces=false,
+    tabsize=4,
+    frame=lines,
+    basicstyle={\footnotesize\lstbasicfont},
+    keywordstyle=\color{darkblue}\bfseries,
+    identifierstyle=,
+    commentstyle=\color{darkgreen},
+    stringstyle=\color{black}
+}
+\lstloadlanguages{C,C++,Java,Matlab,Mathematica,python}
+
+% Repeatedly used sentences
+\newcommand{\handwrite}{The section is handwritten or must be handwritten. In print report, the section would be replaced by the handwritten paper. In the e-version, this paragraph would be shown and can just be omitted.}

@@ -1,0 +1,37 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START OF FILE
+% The latex file is created by Jason Qian/Qian Shengyi.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Title: report.tex
+% Description: The central file of the latex document.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The head document contains everything pre-defined.
+\input{std-head.tex}
+
+\begin{document}
+% My own version of titlepage.
+\input{./titlepage.tex}
+
+% Table of contents. If it is unnecessary, just comment it.
+\input{./toc.tex} 
+
+% After-Lab Report starts here formally.
+\input{./background.tex}
+
+% Hardwrite version contants procedure and PLE required by my professor.
+\input{./handwrite.tex}
+
+% alr.tex contains everything done after the lab including data processing, discussion, conclusions and so on.
+\input{./alr.tex}
+
+% The appendix part can contain original data sheet, code and so on.
+% if no appendix, just comment it.
+\input{./appendix.tex}
+
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END OF FILE 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
